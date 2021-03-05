@@ -302,6 +302,7 @@ public class MaterialOutlinedTextField: UITextField {
         outlineSublayer.path = path.cgPath
         outlineSublayer.lineWidth = outlineLineWidth
         CATransaction.commit()
+        outlineSublayer.fillColor = backgroundColor?.cgColor
         outlineSublayer.strokeColor = colorModel.outlineColor.cgColor
 
         if outlineSublayer.superlayer != layer {
